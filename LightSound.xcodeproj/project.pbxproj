@@ -12,9 +12,11 @@
 		B3A512B91F787A6900AAC4D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A512B71F787A6900AAC4D4 /* Main.storyboard */; };
 		B3A512BB1F787A6900AAC4D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3A512BA1F787A6900AAC4D4 /* Assets.xcassets */; };
 		B3A512BE1F787A6900AAC4D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3A512BC1F787A6900AAC4D4 /* LaunchScreen.storyboard */; };
+		DBFF2F1FD527DABE5F38075B /* Pods_LightSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09C2A11BF627DCE989BD31DA /* Pods_LightSound.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09C2A11BF627DCE989BD31DA /* Pods_LightSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A512B01F787A6900AAC4D4 /* LightSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3A512B31F787A6900AAC4D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3A512B51F787A6900AAC4D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		B3A512BA1F787A6900AAC4D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3A512BD1F787A6900AAC4D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3A512BF1F787A6900AAC4D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBD785EEC7385998952993AC /* Pods-LightSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightSound.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightSound/Pods-LightSound.release.xcconfig"; sourceTree = "<group>"; };
+		FFBBD46EA4896654B66CE53D /* Pods-LightSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightSound.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightSound/Pods-LightSound.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFF2F1FD527DABE5F38075B /* Pods_LightSound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28C9B9BE3EF1855749D0049F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFBBD46EA4896654B66CE53D /* Pods-LightSound.debug.xcconfig */,
+				CBD785EEC7385998952993AC /* Pods-LightSound.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B3A512A71F787A6900AAC4D4 = {
 			isa = PBXGroup;
 			children = (
 				B3A512B21F787A6900AAC4D4 /* LightSound */,
 				B3A512B11F787A6900AAC4D4 /* Products */,
+				28C9B9BE3EF1855749D0049F /* Pods */,
+				EE77CEF3FE73F8B195DE1EBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = LightSound;
 			sourceTree = "<group>";
 		};
+		EE77CEF3FE73F8B195DE1EBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09C2A11BF627DCE989BD31DA /* Pods_LightSound.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3A512C21F787A6900AAC4D4 /* Build configuration list for PBXNativeTarget "LightSound" */;
 			buildPhases = (
+				92EE256D292E77B163620E7B /* [CP] Check Pods Manifest.lock */,
 				B3A512AC1F787A6900AAC4D4 /* Sources */,
 				B3A512AD1F787A6900AAC4D4 /* Frameworks */,
 				B3A512AE1F787A6900AAC4D4 /* Resources */,
+				3F41224D730BC718C3E902AB /* [CP] Embed Pods Frameworks */,
+				0BE968C861CB7AFA6599B52E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BE968C861CB7AFA6599B52E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightSound/Pods-LightSound-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F41224D730BC718C3E902AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LightSound/Pods-LightSound-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightSound/Pods-LightSound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92EE256D292E77B163620E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LightSound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3A512AC1F787A6900AAC4D4 /* Sources */ = {
@@ -272,6 +353,7 @@
 		};
 		B3A512C31F787A6900AAC4D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFBBD46EA4896654B66CE53D /* Pods-LightSound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +368,7 @@
 		};
 		B3A512C41F787A6900AAC4D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBD785EEC7385998952993AC /* Pods-LightSound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
